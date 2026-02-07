@@ -196,3 +196,19 @@ footer {
 .social img {
   width: 32px;
 }
+.employee-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.employee {
+  margin: 0;
+}
+
+.employee img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
