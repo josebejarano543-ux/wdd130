@@ -1,39 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Home | José Bejarano</title>
-
-  <meta name="description" content="José Bejarano | WDD 130 | Course homepage and projects">
-  <meta name="author" content="José Alfredo Bejarano Barroso">
-
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Water Rafting | Trips</title>
+  <meta name="description" content="Explore our rafting trips: beginner-friendly, intermediate, and advanced adventures. Compare trip details, duration, difficulty, and pricing.">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="White Water Rafting Company Logo" width="140" height="70">
+    </a>
 
-<header>
-  <h1>José Bejarano | WDD 130</h1>
-</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-<main>
-  <img src="images/profile.jpg" alt="Profile photo of Jose Bejarano">
-  <p>Hello! My name is José Bejarano. This is my WDD 130 course homepage.</p>
-</main>
+  <main>
+    <section class="page-hero">
+      <h1>Our Trips</h1>
+      <p>Pick your adventure — from calm scenic floats to big-water adrenaline runs.</p>
+      <a class="btn btn-primary" href="contact.html">Contact Us to Book</a>
+    </section>
 
-<aside>
-  <h2>Utah, USA</h2>
-  <img src="images/provo2.jpg" alt="Landscape of Utah">
-  <p>
-    Utah is known for its mountains, national parks, and beautiful landscapes.
-    It is a great place to live and study.
-  </p>
-</aside>
+    <!-- Trip cards (grid) -->
+    <section class="trips-grid">
+      <article class="trip-card">
+        <img src="images/trip-beginner.jpg" alt="Calm rafting section for beginners" width="800" height="500">
+        <div class="trip-body">
+          <h2>River Intro (Beginner)</h2>
+          <p>
+            Perfect for first-timers and families. Learn paddling basics, enjoy scenic views,
+            and build confidence with gentle rapids.
+          </p>
+          <ul>
+            <li><strong>Duration:</strong> 3 hours</li>
+            <li><strong>Difficulty:</strong> Class I–II</li>
+            <li><strong>Minimum age:</strong> 8+</li>
+          </ul>
+        </div>
+      </article>
 
-<footer>
-  <p>© 2026 José Bejarano</p>
-</footer>
+      <article class="trip-card">
+        <img src="images/trip-intermediate.jpg" alt="Group navigating moderate rapids" width="800" height="500">
+        <div class="trip-body">
+          <h2>Canyon Run (Intermediate)</h2>
+          <p>
+            A balanced trip with exciting rapids and time to enjoy the canyon. Great for
+            adventurous beginners and intermediate rafters.
+          </p>
+          <ul>
+            <li><strong>Duration:</strong> Half-day</li>
+            <li><strong>Difficulty:</strong> Class II–III</li>
+            <li><strong>Minimum age:</strong> 12+</li>
+          </ul>
+        </div>
+      </article>
 
+      <article class="trip-card">
+        <img src="images/trip-advanced.jpg" alt="Rafting through strong white water rapids" width="800" height="500">
+        <div class="trip-body">
+          <h2>High Rapids Challenge (Advanced)</h2>
+          <p>
+            Big water, powerful waves, and fast decision-making. Built for experienced rafters
+            who want an intense ride with expert guiding.
+          </p>
+          <ul>
+            <li><strong>Duration:</strong> Full-day</li>
+            <li><strong>Difficulty:</strong> Class III–IV</li>
+            <li><strong>Minimum age:</strong> 16+</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Trips table -->
+    <section class="trips-table-wrap">
+      <h2>Compare Trips</h2>
+
+      <div class="table-scroll">
+        <table class="trips-table">
+          <thead>
+            <tr>
+              <th scope="col">Trip</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Difficulty</th>
+              <th scope="col">Season</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">River Intro</th>
+              <td>3 hours</td>
+              <td>Class I–II</td>
+              <td>Apr–Oct</td>
+              <td>$69</td>
+            </tr>
+            <tr>
+              <th scope="row">Canyon Run</th>
+              <td>Half-day</td>
+              <td>Class II–III</td>
+              <td>May–Sep</td>
+              <td>$99</td>
+            </tr>
+            <tr>
+              <th scope="row">High Rapids Challenge</th>
+              <td>Full-day</td>
+              <td>Class III–IV</td>
+              <td>Jun–Aug</td>
+              <td>$149</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="small">
+        Prices shown are examples — update them to match your site plan if you already defined different amounts.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="cta-banner">
+      <h2>Questions about gear, schedules, or group bookings?</h2>
+      <a class="btn btn-secondary" href="contact.html">Send Us a Message</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> White Water Rafting Company | José Bejarano</p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">
+        <img src="images/facebook.png" alt="Facebook" width="32" height="32">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">
+        <img src="images/instagram.png" alt="Instagram" width="32" height="32">
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">
+        <img src="images/twitter.png" alt="Twitter" width="32" height="32">
+      </a>
+    </div>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
